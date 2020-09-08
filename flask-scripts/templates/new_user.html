@@ -1,0 +1,19 @@
+<head>
+  <title> MiAccount </title>
+</head>
+<body bgcolor ="#CCCCF">
+<h1><center> Nouveau Compte  </center> </h1>
+<div>
+  <link rel="stylesheet" type="text/css" href="mystyle2.css">
+  <form method="POST" action="{{url_for('confirm')}}">
+    <label> Pseudo
+    <input type="text" name="pseudo" placeholder="*Pseudo*" required/>
+  </label>
+    <br>
+  <label> Mot De Passe
+    <input type="text" name="mdp" placeholder="Mot de passe" required/>
+    <input type="submit" value="Soumettre" />
+    <br>
+  </label>
+  </form>
+</div>

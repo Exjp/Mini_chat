@@ -1,0 +1,36 @@
+<head>
+  <title > Mini Chat </title>
+</head>
+<body bgcolor = "#CCCCF">
+<h1><center> Mini Chat </center> </h1>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <p>
+  <center>
+  <fieldset>
+    <legend> Connexion </legend>
+    <br>
+    <div class = "container">
+    <form method="POST" action="{{url_for('log')}}">
+      <label> Pseudo
+      <input type="text" name="pseudo" placeholder="*Pseudo*" required/>
+      </label>
+      <br>
+      <br>
+    <label > Mot de pass
+      <input type="text" name="mdp" placeholder="*Mot de passe*" required/>
+      <input type="submit" value="Soumettre" />
+    <br>
+  </label>
+</div>
+  </form>
+  <div>
+  <form method="POST" action="{{url_for('create')}}">
+    <br>
+    <input type="submit" value="Inscription" />
+  </form>
+  </fieldset>
+</center>
+</p>
+
+</div>
+</body>

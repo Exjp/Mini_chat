@@ -1,0 +1,39 @@
+<head>
+  <title> MiniMessages </title>
+</head>
+<body bgcolor = "#CCCCF">
+<h1> <center> CHAT </center></h1>
+    <link rel="stylesheet" type="text/css" href="mystyle3.css">
+    <div id="all" style="display: flex; flex-direction:column; justify-content: space-between;">
+      <div id = 'chat' style="border: 2px black solid; width: 100%">
+        {% for i in merguez %}
+        <p style="border: 1px red dotted; padding-top:2%;">{{ i[2] }}) {{ i[0] }} : {{ i[1] }} </p>
+
+        {% endfor %}
+
+
+      </div>
+
+      <div id="text">
+          <br>
+          <form method="POST" action="{{url_for('after_form')}}">
+          <br>
+          <textarea name="message" rows="7" cols="80"></textarea>
+          <input type="submit" value="Soumettre" />
+        </form>
+
+      </div>
+      <div>
+        <form method="POST" action="{{url_for('display_chat')}}">
+          <input type="submit" value="Refresh" />
+
+        </form>
+      </div>
+      <br>
+      <div>
+        <form method="POST" action="{{url_for('end')}}">
+          <input type="submit" value="Log out" />
+      </div>
+
+    </div>
+</body>

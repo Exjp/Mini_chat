@@ -1,0 +1,34 @@
+
+body {
+color : #404040;
+font-family: Impact, Charcoal, sans-serif;
+
+}
+h1 {
+color : #560BAB;
+font-family: "Comic Sans Ms", cursive, sans-serif;
+background-color: #9999FF;
+}
+p {
+color : #404040;
+
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input:hover {
+    opacity: 0.8;
+}
+input {
+    color: #330019;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
