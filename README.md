@@ -17,5 +17,6 @@ Les contraintes
 - Ne reconnait pas les balises HTML pour les postes de messages
 - Incapacité à ajouter l'heure et la date
 - Ne peut pas mettre de guillemmets lors de la prise des pseudos (risque de bugs)
+
 POURTIER jacques
 WARDEH Amir
